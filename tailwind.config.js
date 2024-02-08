@@ -4,7 +4,7 @@ export default {
   darkMode: "class",
   theme: {
     extend: {
-      colors: { primary: "#ffc727", dark: "#111111", best: "#5500ff" },
+      colors: { primary: "#ffc727", dark: "#111111", best: "#3366ff" },
       container: { center: true, padding: { DEFAULT: "1rem", sm: "3rem" } },
     },
   },

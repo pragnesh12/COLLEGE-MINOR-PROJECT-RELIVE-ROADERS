@@ -6,6 +6,7 @@ import NavBar from "./Components/NavBar/NavBar";
 import HeroSection from "./Components/HeroSection/HeroSection";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import About from "./Components/AboutSection/About";
 
 function App() {
   // Dark - Mode Feature
@@ -23,10 +24,22 @@ function App() {
     }
   }, [theme]);
 
+  //Enimation effects
+  React.useEffect(() => {
+    Aos.init({
+      offset: 100,
+      duration: 800,
+      easing: "ease-in-shine",
+      delay: 100,
+    });
+    Aos.refresh();
+  }, []);
+
   return (
     <>
       <NavBar theme={theme} setTheme={setTheme} />
       <HeroSection theme={theme} />
+      <About theme={theme} />
     </>
   );
 }
